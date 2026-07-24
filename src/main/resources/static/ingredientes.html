@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Ingrediente</title>
+</head>
+
+<body>
+
+<h1>Cadastrar Ingrediente</h1>
+
+<form id="formIngrediente">
+
+    <label>Nome</label><br>
+    <input type="text" id="nome" required>
+    <br><br>
+
+    <label>Valor</label><br>
+    <input type="number" step="0.01" id="valor" required>
+    <br><br>
+
+    <label>Disponibilidade</label><br>
+
+    <select id="disponibilidade">
+        <option value="true">Disponível</option>
+        <option value="false">Indisponível</option>
+    </select>
+
+    <br><br>
+
+    <label>Fornecedor</label><br>
+
+    <select id="fornecedor">
+    </select>
+
+    <br><br>
+
+    <button type="submit">
+        Cadastrar
+    </button>
+
+</form>
+
+<br>
+
+<a href="ingredientesListar.html">
+    Ver ingredientes
+</a>
+
+<script src="cadastrarIngrediente.js"></script>
+
+</body>
+</html>
